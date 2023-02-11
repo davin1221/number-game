@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자게임</title>
+    <style>
+        body {
+            background-image: url(img/wallpaper.webp);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "wrap">
+        <div class = "main-box">
+
+            <div>
+                <img src="img/logo.png" alt="맞춰보세요" class="logo-style">
+            </div>
+
+            <div><!--결과창-->
+                <h4><img src="img/startimoji.png" alt="start" class="img-style result-area"></h4>
+                <h3 id = "chance-area"></h3>
+            </div>
+
+            <div class="div-input"><!--입력창-->
+                <input type="number" id="user-Input" placeholder="1~100까지의 숫자 입력" class="input-style">
+                <button id = "play-button" class="play-style">GO</button>
+                <div id = "wrong-number" class="wrong-style"></div>
+            </div>            
+        </div>
+
+        <div>
+            <button id = "reset-button" class="reset-style">Reset</button>
+        </div>
+        
+    </div>
+
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
